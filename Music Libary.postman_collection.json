@@ -1,0 +1,132 @@
+{
+	"info": {
+		"_postman_id": "557b6961-8aed-4c76-9b12-5d3bbb5d5dcf",
+		"name": "Music Libary",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Get all Music",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5005/api/Music/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5005",
+					"path": [
+						"api",
+						"Music",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET Songs By ID",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5005/api/Music/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5005",
+					"path": [
+						"api",
+						"Music",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "POST newSong",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"title\": \"Save a life\",\r\n    \"album\": \"Unkown\",\r\n    \"artist\": \"The Fray\",\r\n    \"genre\": \"Folk Rock\",\r\n    \"releaseDate\": \"12/03/1995\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5005/api/Songs/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5005",
+					"path": [
+						"api",
+						"Songs",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PUT Existing Song",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"title\": \"BigBooty\",\r\n    \"album\": \"Unkown\",\r\n    \"artist\": \"eddie murphy\",\r\n    \"genre\": \"soul\",\r\n    \"releaseDate\": \"12/03/1995\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5005/api/Music/26",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5005",
+					"path": [
+						"api",
+						"Music",
+						"26"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DELETE Song",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5005/api/Music/26",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5005",
+					"path": [
+						"api",
+						"Music",
+						"26"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
